@@ -1,0 +1,28 @@
+{
+  "name": "aes-256-gcm",
+  "version": "1.0.0",
+  "description": "Simplifies encryption/decryption using the AES 256 GCM algorithm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catcher-in-the-try/aes-256-gcm.git"
+  },
+  "keywords": [
+    "aes",
+    "aes-256-gcm",
+    "crypto",
+    "encryption",
+    "decryption",
+    "aes",
+    "aes-256"
+  ],
+  "author": "Anton Ivanov <anton@ivanov.hk>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/catcher-in-the-try/aes-256-gcm/issues"
+  },
+  "homepage": "https://github.com/catcher-in-the-try/aes-256-gcm#readme"
+}
