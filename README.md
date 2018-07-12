@@ -38,9 +38,9 @@ containing three base64-encoded strings:
 
 ```json
 { 
-  ciphertext: '(string)', 
-  iv: '(string)', 
-  tag: '(string)'
+  "ciphertext": "(string)", 
+  "iv": "(string)", 
+  "tag": "(string)"
 }
 ```
 

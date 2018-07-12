@@ -1,10 +1,10 @@
 {
   "name": "aes-256-gcm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplifies encryption/decryption using the AES 256 GCM algorithm.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified for aes-256-gcm\""
   },
   "repository": {
     "type": "git",
