@@ -2,6 +2,9 @@
 
 A static class that simplifies encryption/decryption using the AES 256 GCM algorithm.
 
+Just use a one-liner to encrypt or decrypt - the IV and tag are handled
+automatically.
+
 ## Example ##
 
 ```js
@@ -11,18 +14,15 @@ const Aes = require('aes-256-gcm');
 const SHARED_SECRET = '12345678901234567890123456789012';
 
 // Encrypt:
-let encrypted = Aes.encrypt('hi', SHARED_SECRET);
+let { ciphertext, iv, tag } = Aes.encrypt('hi', SHARED_SECRET);
 
-// `encrypted` contains:
-// { 
-//   ciphertext: 'VOE=',
-//   iv: '0K6oPWsBAHLXYtLu5VAvsQ==',
+//   ciphertext: 'VOE='
+//   iv: '0K6oPWsBAHLXYtLu5VAvsQ=='
 //   tag: 'hCae3Lt5sAK3oNAnUh5emA==' 
-// }
 
 
 // Decrypt:
-let cleartext = Aes.decrypt(encrypted.ciphertext, encrypted.iv, encrypted.tag, SHARED_SECRET;
+let cleartext = Aes.decrypt(ciphertext, iv, tag, SHARED_SECRET;
 
 // `cleartext` contains:
 // 'hi'
